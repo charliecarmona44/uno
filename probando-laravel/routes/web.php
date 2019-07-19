@@ -54,6 +54,10 @@ Route::get('/Registrarse',"IndexController@registrarse");
 
 Route::get('/admin',"IndexController@admin");
 
+Route::get('/loginuser',"IndexController@loginuser");
+
+Route::get('/registeruser',"IndexController@registeruser");
+
 
 Auth::routes();
 

@@ -19,10 +19,34 @@
 
 </head>
 <body>
-    <div id="app">
-        <nav class="navbar navbar-default navbar-static-top">
+<header class="header_area">
+            <div class="main_menu">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <div class="container">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <a class="" href=""><img src="img/Imagen1.png" width="121"height="127"></a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+
+                          </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+
+
+
+    <div>
+        <nav>
             <div class="container">
-                <div class="navbar-header">
+                <div>
 
                     <!-- Collapsed Hamburger -->
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navbar-collapse">
@@ -32,10 +56,11 @@
                         <span class="icon-bar"></span>
                     </button>
 
-                    <!-- Branding Image -->
-                    <a class="navbar-brand" href="{{ url('/') }}">
+                    <!-- Branding Image
+                     <a class="navbar-brand" href="{{ url('/') }}">
                         {{ config('app.name', 'Brazos Firmes') }}
-                    </a>
+                    </a>-->
+
                 </div>
 
                 <div class="collapse navbar-collapse" id="app-navbar-collapse">
@@ -45,11 +70,11 @@
                     </ul>
 
                     <!-- Right Side Of Navbar -->
-                    <ul class="nav navbar-nav navbar-right">
+
                         <!-- Authentication Links -->
                         @if (Auth::guest())
 
-                            <li><a href="{{ route('register') }}">Register</a></li>
+
                         @else
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
@@ -78,8 +103,10 @@
 
         @yield('content')
     </div>
-    <div style="text-align:center;"><iframe width="760" height="370" src="https://www.youtube.com/embed/9-uv7wM-Dow" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+    <!--
+    <div style="text-align:center;"><iframe width="760" height="370" src="https://www.youtube.com/embed/9-uv7wM-Dow" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    -->
 
     <script src="{{ asset('js/app.js') }}"></script>
      <script src="{{ asset('js/style.js') }}"></script>

@@ -50,8 +50,8 @@
 
 
                                 <form class="form-inline my-2 my-lg-0">
-                                   <h3> " Somos Corazones que Piensan Manos que Impulsan"</h3>
-
+                                   <h3> "Ingresa al portal de administraores"</h3>
+                                   <p> </p>
                                    <div class="navbar navbar-expand-lg navbar-dark">
                                    @if (Route::has('login'))
                                    <div class="top-right links">

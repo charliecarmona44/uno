@@ -51,6 +51,19 @@ class IndexController extends Controller{
 
     }
 
+    public function registeruser(){
+
+        return view ("registeruser");
+
+    }
+
+    public function loginuser(){
+
+        return view ("loginuser");
+
+    }
+
+
 }
 
 ?>

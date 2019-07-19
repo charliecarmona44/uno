@@ -37,7 +37,7 @@
 
 						<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 							<ul class="nav navbar-nav menu_nav ml-auto">
-								<li class="nav-item active"><a class="nav-link" href="index.html">Inicio</a></li>
+								<li class="nav-item active"><a class="nav-link" href="{{ url('/index') }}">Inicio</a></li>
 								<li class="nav-item"><a class="nav-link" href="about-us.html">Informacion</a></li>
 								<li class="nav-item submenu dropdown">
 									<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Proyectos</a>
@@ -56,7 +56,7 @@
 									<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Estadisticas</a>
 								</li>
 								<li class="nav-item submenu dropdown">
-									<a class="nav-link" href="contact.html">Contacto</a>
+									<a class="nav-link" href="{{ url('/contacto') }}" >Contacto</a>
 									<ul class="dropdown-menu">
 										<li class="nav-item"><a class="nav-link" href="#"></a></li>
 									</ul>
@@ -69,8 +69,8 @@
                                     @if (Auth::check())
                                    <a href="{{ url('/home') }}">Home</a>
                                    @else
-                                <a  class="btn btn-danger btn-sm"  href="{{ url('/login') }}" >Ingresar a mi cuenta</a>
-                                <a  class="btn btn-danger btn-sm" href="{{ url('/register') }}">Solicitar una protesis</a>
+                                <a  class="btn btn-danger btn-sm"  href="{{ url('/loginuser') }}" >Ingresar a mi cuenta</a>
+                                <a  class="btn btn-danger btn-sm" href="{{ url('/registeruser') }}">Solicitar una protesis</a>
                                    @endif
                                     </div>
                                         @endif
