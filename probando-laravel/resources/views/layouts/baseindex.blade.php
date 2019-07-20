@@ -18,6 +18,8 @@
         <!-- main css -->
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/responsive.css">
+        <link  href="{!! asset('css/style.css') !!}" rel="stylesheet">
+        <link  href="{!! asset('css/responsive.css') !!}" rel="stylesheet">
     </head>
     <body>
 
@@ -100,7 +102,13 @@
             </div>
         </section>
 
-
+         <pre><div class="video-responsive">
+         <div style="text-align:center;"  class="banner_content text-center">
+         <h3>"Conoce nuestra fundación"<br>
+								"</h3>
+         <iframe width="800" height="415" src="https://www.youtube.com/embed/9-uv7wM-Dow" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+         </div>
+     </pre>
 
         <section class="home_blog_area pad_top">
         	<div class="container">

@@ -45,9 +45,11 @@
 						</div>
 						<input type="password" class="form-control" placeholder="password">
 					</div>
+
 					<div class="row align-items-center remember">
 						<input type="checkbox">Remember Me
 					</div>
+
 					<center>
 					<div class="col-md-4 text-center">
 						<center>

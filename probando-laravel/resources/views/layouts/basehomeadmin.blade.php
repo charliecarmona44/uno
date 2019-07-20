@@ -2,7 +2,7 @@
  <head>
 
   <title>
-
+  Administrador
   <title>
 
  </head>
@@ -23,6 +23,7 @@
         <!-- main css -->
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/responsive.css">
+        <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
 
 
@@ -46,7 +47,7 @@
                         <a> has ingresado al sistema!</a>
 						<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 							<ul class="nav navbar-nav menu_nav ml-auto">
-                                <li class="nav-item"><a class="nav-link" href="index.html">Bienvenido administrador</a></li>
+                                <li class="nav-item"><a class="nav-link" href="index.html"></a></li>
 								<li class="nav-item active"><a class="nav-link" href="index.html"></a></li>
 								<li class="nav-item"><a class="nav-link" href="about-us.html">Informacion</a></li>
 								<li class="nav-item submenu dropdown">
@@ -56,39 +57,21 @@
 										<li class="nav-item"><a class="nav-link" href="project-details.html">Ver usuarios</a></li>
 									</ul>
 								</li>
-								<li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                                    {{ Auth::user()->name }} <span class="caret"></span>
-                                </a>
 
-                                <ul class="dropdown-menu" role="menu">
-                                    <li>
-                                        <a href="{{ route('logout') }}"
-                                            onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                            Logout
-                                        </a>
-
-                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                <li class="nav-item submenu dropdown">
+									<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Bienvenid@ {{ Auth::user()->name }}  </a>
+									<ul class="dropdown-menu">
+										<li class="nav-item"><a href="{{ route('logout') }}"  class="nav-link" onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">>Salir del sistema</a>
+                                      <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                             {{ csrf_field() }}
                                         </form>
-                                    </li>
+									</ul>
+								</li>
 
-								<form class="form-inline my-2 my-lg-0">
-
-                                   <div class="navbar navbar-expand-lg navbar-dark">
-                                   @if (Route::has('login'))
-                                   <div class="top-right links">
-                                    @if (Auth::check())
-                                   <!-- <a href="{{ url('/home') }}">Home</a> -->
-                                   @else
-                                <a  class="btn btn-danger btn-sm"  href="{{ url('/login') }}" >Ingresar a mi cuenta</a>
-                                <a  class="btn btn-danger btn-sm" href="{{ url('/register') }}">Solicitar una protesis</a>
-                                   @endif
-                                    </div>
-                                        @endif
-                                     </form>
 							</ul>
+
+
 						</div>
 					</div>
             	</nav>
