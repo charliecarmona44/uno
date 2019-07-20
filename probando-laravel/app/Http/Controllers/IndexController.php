@@ -63,6 +63,11 @@ class IndexController extends Controller{
 
     }
 
+    public function loginn(){
+
+        return view ("loginn");
+
+    }
 
 }
 

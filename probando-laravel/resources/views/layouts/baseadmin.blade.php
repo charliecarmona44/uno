@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="{{ app()->getLocale() }}">
+<html lang="en">
     <head>
         <!-- Required meta tags -->
         <meta charset="utf-8">
@@ -59,7 +59,7 @@
                                    <a href="{{ url('/home') }}">Home</a>
                                    @else
                                 <a class="btn btn-danger btn-lg" href="{{
-                                url('/login') }}">
+                                url('/loginn') }}">
                                   <span class="spinner-grow spinner-grow-sm"></span>
                                   Ingresar al sistema
                                 </a>

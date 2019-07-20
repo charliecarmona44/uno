@@ -48,3 +48,6 @@ class LoginController extends Controller
         return redirect()->guest('entrar');
     }
 }*/
+
+
+

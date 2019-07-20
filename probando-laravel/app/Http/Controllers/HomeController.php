@@ -23,8 +23,6 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('homeadmin');
+        return view('home');
     }
-
-    /*public function logout() { return redirect(property_exists($this, 'redirectAfterLogout') ? $this- >redirectAfterLogout : '/admin'); } */
 }

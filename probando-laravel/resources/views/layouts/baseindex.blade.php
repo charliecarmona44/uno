@@ -63,14 +63,17 @@
 								</li>
 								<form class="form-inline my-2 my-lg-0">
 
+
                                    <div class="navbar navbar-expand-lg navbar-dark">
                                    @if (Route::has('login'))
                                    <div class="top-right links">
                                     @if (Auth::check())
                                    <a href="{{ url('/home') }}">Home</a>
                                    @else
+
                                 <a  class="btn btn-danger btn-sm"  href="{{ url('/loginuser') }}" >Ingresar a mi cuenta</a>
                                 <a  class="btn btn-danger btn-sm" href="{{ url('/registeruser') }}">Solicitar una protesis</a>
+
                                    @endif
                                     </div>
                                         @endif

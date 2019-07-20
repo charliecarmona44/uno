@@ -58,11 +58,32 @@ Route::get('/loginuser',"IndexController@loginuser");
 
 Route::get('/registeruser',"IndexController@registeruser");
 
+Route::get('/loginn',"IndexController@loginn");
 
 Auth::routes();
+
+
 
 Route::get('/homeadmin', 'HomeController@index')->name('home');
 
 Route::get('logout', 'Auth\LoginController@logout');
 
+
+
+//Route::get('/', 'Auth\LoginController@login');
+
+//Route::get ('/login','LoginController@login');
+//Route::post ('/verificar','LoginUsuarioController@LoginUsuario');
+
 //Route::get('/', function () { return view('index'); })->middleware('auth');
+
+
+/*Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+*/
